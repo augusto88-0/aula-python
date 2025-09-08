@@ -19,8 +19,16 @@ def divisao(a, b):
 print("=== Calculadora Simples ===")
 x = float(input("Digite o primeiro número: "))
 y = float(input("Digite o segundo número: "))
+op = input('escolha uma operação (+, -, *, /): ')
 
-print("Soma:", soma(x, y))
-print("Subtração:", subtracao(x, y))
-print("Multiplicação:", multiplicacao(x, y))
-print("Divisão:", divisao(x, y))
+if op == '+':
+    print(f'O resultado é: {soma(x, y)}')
+elif op == '-':
+    print(f'O resultado é: {subtracao(x, y)}')
+elif op == '*':
+    print(f'O resultado é: {multiplicacao(x, y)}')
+elif op == '/':
+    print(f'O resultado é: {divisao(x, y)}')
+else:
+    print('Operação inexistente')
+
